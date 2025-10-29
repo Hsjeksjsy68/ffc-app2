@@ -1,0 +1,7 @@
+{
+  "name": "Flameunter FC Fan Hub",
+  "description": "The official fan hub for Flameunter FC. Get the latest news, find our stadium, generate unique fan art, and analyze match photos with the power of Gemini.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

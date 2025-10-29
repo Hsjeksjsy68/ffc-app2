@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flameunter FC Fan Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-red': '#C8102E',
+              'brand-orange': '#FFA300',
+              'brand-dark': '#1A202C',
+              'brand-gray': '#2D3748',
+              'brand-light': '#F7FAFC',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.3s ease-in-out',
+              'fade-in-up': 'fadeInUp 0.4s ease-in-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              fadeInUp: {
+                '0%': { opacity: 0, transform: 'translateY(10px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        touch-action: manipulation;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-dark text-brand-light font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
